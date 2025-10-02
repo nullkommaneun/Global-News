@@ -3,17 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Global Situation Dashboard — Live MVP</title>
-
+  <title>Global Situation Dashboard — Europe Focus (Live)</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-
   <link rel="stylesheet" href="app/style.css" />
   <script type="module" src="app/main.js" defer></script>
 </head>
 <body>
   <header class="topbar">
-    <h1>Global Situation Dashboard — Live MVP</h1>
+    <h1>Europe Focus — Live</h1>
     <div class="controls">
       <label>Zeitraum:
         <select id="rangeSelect">
@@ -37,7 +35,10 @@
         <input id="minConf" type="range" min="0" max="100" value="50" />
         <span id="minConfVal">50</span>
       </label>
-      <button id="reloadBtn" title="Live-Daten neu laden">Neu laden</button>
+      <label>
+        <input id="euOnly" type="checkbox" checked /> Nur Europa
+      </label>
+      <button id="reloadBtn">Neu laden</button>
     </div>
   </header>
 
@@ -51,12 +52,10 @@
         <h2>Top-Risiken (Score)</h2>
         <ol id="triageList" class="triage-list"></ol>
       </section>
-
       <section class="events" aria-label="Ereignisse">
         <h2>Ereignisse</h2>
         <div id="eventList" class="event-list"></div>
       </section>
-
       <section class="diag" aria-label="Diagnose">
         <h2>Diagnose</h2>
         <pre id="diagBox" class="diag-box"></pre>
@@ -66,8 +65,8 @@
 
   <footer class="footer">
     <small>
-      Live-Datenquellen: USGS (Erdbeben), NASA EONET (Naturereignisse), CISA KEV (Cyber). —
-      <a href="data/events.mock.json">Fallback: events.mock.json</a>
+      Live: USGS (FDSN), NASA EONET, GDACS, ECDC, CERT‑EU, ENISA, Eurostat, ECB SDW, UK Flood API, EU-Parlament u. a. —
+      Einige Feeds liefern evtl. nur RSS/HTML (Client‑Parser) und unterliegen CORS/Rate‑Limits.
     </small>
   </footer>
 </body>
