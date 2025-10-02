@@ -1,39 +1,39 @@
 [
   {
-    "id": "evt_mock_quake",
+    "id": "mock_eu_tokyo",
     "time_utc": "2025-09-28T03:12:00Z",
     "updated_utc": "2025-09-28T03:25:00Z",
     "geo": {
-      "lat": 35.68,
-      "lon": 139.69,
-      "admin0": "Japan",
-      "admin1": "Tokyo"
+      "lat": 50.11,
+      "lon": 8.68,
+      "admin0": "Germany",
+      "admin1": "Hesse"
     },
     "category": "environment",
     "subcategory": "earthquake",
-    "headline": "Erdbeben mittlerer Stärke nahe Tokyo (Mock)",
-    "summary": "Vorläufige Magnitude 5.2; keine Tsunami-Warnung.",
+    "headline": "Mock-Event: Testpunkt Frankfurt",
+    "summary": "Nur Fallback.",
     "sources": [
       {
-        "name": "Seismologischer Dienst",
-        "url": "https://example.org/source/eq1",
-        "confidence": 0.95
+        "name": "Mock",
+        "url": "#",
+        "confidence": 0.5
       }
     ],
     "metrics": {
-      "severity": 48,
-      "exposure": 90,
-      "confidence": 95,
-      "trend": "falling"
+      "severity": 40,
+      "exposure": 50,
+      "confidence": 50,
+      "trend": "flat"
     },
     "impacts": {
-      "population": 2,
-      "supply_chain": 2,
-      "markets": 1,
-      "infrastructure": 2
+      "population": 1,
+      "supply_chain": 1,
+      "markets": 0,
+      "infrastructure": 1
     },
     "tags": [
-      "quake"
+      "mock"
     ]
   }
 ]
