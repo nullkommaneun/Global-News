@@ -1,87 +1,6 @@
 [
   {
-    "id": "evt_2025-10-01_conflict_kyiv",
-    "time_utc": "2025-10-01T12:34:56Z",
-    "updated_utc": "2025-10-01T13:10:00Z",
-    "geo": {
-      "lat": 50.45,
-      "lon": 30.52,
-      "admin0": "Ukraine",
-      "admin1": "Kyiv"
-    },
-    "category": "conflict",
-    "subcategory": "drone_strike",
-    "headline": "Drohnenangriffe nahe Hauptstadt gemeldet",
-    "summary": "Mehrere Detonationen und Luftabwehr-Einsätze in der Region; Schäden an Energie-Infrastruktur nicht bestätigt.",
-    "sources": [
-      {
-        "name": "Behördenmeldung",
-        "url": "https://example.org/source/ukr1",
-        "confidence": 0.8
-      },
-      {
-        "name": "Lokale Medien",
-        "url": "https://example.org/source/ukr2",
-        "confidence": 0.7
-      }
-    ],
-    "metrics": {
-      "severity": 72,
-      "exposure": 65,
-      "confidence": 78,
-      "trend": "rising"
-    },
-    "impacts": {
-      "population": 3,
-      "supply_chain": 2,
-      "markets": 1,
-      "infrastructure": 2
-    },
-    "tags": [
-      "energy",
-      "border"
-    ]
-  },
-  {
-    "id": "evt_2025-09-30_market_fx",
-    "time_utc": "2025-09-30T08:10:00Z",
-    "updated_utc": "2025-09-30T08:40:00Z",
-    "geo": {
-      "lat": 51.5,
-      "lon": -0.12,
-      "admin0": "United Kingdom",
-      "admin1": "London"
-    },
-    "category": "economy",
-    "subcategory": "market_shock",
-    "headline": "Starker Intraday-Ausschlag am Devisenmarkt",
-    "summary": "Kurzfristige Volatilität nach überraschender Datenerhebung; Re-Pricing der Zinserwartungen.",
-    "sources": [
-      {
-        "name": "Börsendaten",
-        "url": "https://example.org/source/fx1",
-        "confidence": 0.9
-      }
-    ],
-    "metrics": {
-      "severity": 55,
-      "exposure": 80,
-      "confidence": 60,
-      "trend": "flat"
-    },
-    "impacts": {
-      "population": 1,
-      "supply_chain": 2,
-      "markets": 4,
-      "infrastructure": 0
-    },
-    "tags": [
-      "usd",
-      "gbp"
-    ]
-  },
-  {
-    "id": "evt_2025-09-28_quake",
+    "id": "evt_mock_quake",
     "time_utc": "2025-09-28T03:12:00Z",
     "updated_utc": "2025-09-28T03:25:00Z",
     "geo": {
@@ -92,8 +11,8 @@
     },
     "category": "environment",
     "subcategory": "earthquake",
-    "headline": "Erdbeben mittlerer Stärke nahe Tokyo",
-    "summary": "Vorläufige Magnitude 5.2 in geringer Tiefe; keine Tsunami-Warnung.",
+    "headline": "Erdbeben mittlerer Stärke nahe Tokyo (Mock)",
+    "summary": "Vorläufige Magnitude 5.2; keine Tsunami-Warnung.",
     "sources": [
       {
         "name": "Seismologischer Dienst",
@@ -115,81 +34,6 @@
     },
     "tags": [
       "quake"
-    ]
-  },
-  {
-    "id": "evt_2025-09-29_health_outbreak",
-    "time_utc": "2025-09-29T10:05:00Z",
-    "updated_utc": "2025-09-29T14:05:00Z",
-    "geo": {
-      "lat": 6.52,
-      "lon": 3.38,
-      "admin0": "Nigeria",
-      "admin1": "Lagos"
-    },
-    "category": "health",
-    "subcategory": "outbreak",
-    "headline": "Cluster verdächtiger Krankheitsfälle in Lagos",
-    "summary": "Gesundheitsbehörde meldet Anstieg atypischer Pneumonie-Fälle; Abklärungen laufen.",
-    "sources": [
-      {
-        "name": "Gesundheitsministerium",
-        "url": "https://example.org/source/health1",
-        "confidence": 0.8
-      }
-    ],
-    "metrics": {
-      "severity": 52,
-      "exposure": 70,
-      "confidence": 80,
-      "trend": "rising"
-    },
-    "impacts": {
-      "population": 3,
-      "supply_chain": 1,
-      "markets": 1,
-      "infrastructure": 0
-    },
-    "tags": [
-      "air-travel"
-    ]
-  },
-  {
-    "id": "evt_2025-09-27_port_closure",
-    "time_utc": "2025-09-27T06:00:00Z",
-    "updated_utc": "2025-09-27T09:00:00Z",
-    "geo": {
-      "lat": 29.37,
-      "lon": 47.98,
-      "admin0": "Kuwait",
-      "admin1": "Shuwaikh"
-    },
-    "category": "infrastructure",
-    "subcategory": "port_closure",
-    "headline": "Zeitweilige Hafenschließung wegen Sturmsystem",
-    "summary": "Containerabfertigung ausgesetzt; Rückstau von Lkw erwartet.",
-    "sources": [
-      {
-        "name": "Hafenbehörde",
-        "url": "https://example.org/source/port1",
-        "confidence": 0.85
-      }
-    ],
-    "metrics": {
-      "severity": 58,
-      "exposure": 60,
-      "confidence": 85,
-      "trend": "rising"
-    },
-    "impacts": {
-      "population": 1,
-      "supply_chain": 4,
-      "markets": 2,
-      "infrastructure": 3
-    },
-    "tags": [
-      "shipping",
-      "logistics"
     ]
   }
 ]
